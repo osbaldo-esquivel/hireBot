@@ -22,6 +22,25 @@ Output: if successfully hired, Hired [EMAIL]. If successfully rejected, Rejected
 Print the number of applicants for all stages, including the hired and rejected.
 Output: [STAGE_1] 0 [STAGE_2] 1 [STAGE_3] 1 Hired 2 Rejected 0`
 
+Example
+
+input_file.txt
+
+`DEFINE PhoneInterview BackgroundCheck DocumentSigning
+STATS
+CREATE test@gmail.com
+ADVANCE test@gmail.com
+DECIDE test@gmail.com 0
+STATS`
+
+output_file.txt
+
+`DEFINE PhoneInterview BackgroundCheck DocumentSigning
+Phone Interview 0 BackgroundCheck 0 DocumentSigning 0 Hired 0 Rejected 0
+CREATE test@gmail.com
+ADVANCE test@gmail.com
+Phone Interview 0 BackgroundCheck 0 DocumentSigning 0 Hired 0 Rejected 1`
+
 # Instructions
 
 To run this script, place the input file in the same directory as this script and then run the following command:
