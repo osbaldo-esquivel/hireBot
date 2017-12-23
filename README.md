@@ -27,10 +27,15 @@ Example
 input_file.txt
 
 `DEFINE PhoneInterview BackgroundCheck DocumentSigning  
+
 STATS  
+
 CREATE test@gmail.com  
+
 ADVANCE test@gmail.com  
+
 DECIDE test@gmail.com 0  
+
 STATS`
 
 output_file.txt
