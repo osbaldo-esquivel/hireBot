@@ -18,7 +18,7 @@ Output: if the applicant is already in [STAGE_NAME] or the last stage, Already i
 Decide if the applicant should be hired (1) or rejected (0). An applicant can be rejected (0) from any stage, but has to be in the last stage in order to be hired (1).
 Output: if successfully hired, Hired [EMAIL]. If successfully rejected, Rejected [EMAIL]. Otherwise, Failed to decide for [EMAIL].`
 
-`STATS: 
+`STATS:  
 Print the number of applicants for all stages, including the hired and rejected.  
 Output: [STAGE_1] 0 [STAGE_2] 1 [STAGE_3] 1 Hired 2 Rejected 0`
 
