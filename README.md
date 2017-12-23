@@ -18,27 +18,27 @@ Output: if the applicant is already in [STAGE_NAME] or the last stage, Already i
 Decide if the applicant should be hired (1) or rejected (0). An applicant can be rejected (0) from any stage, but has to be in the last stage in order to be hired (1).
 Output: if successfully hired, Hired [EMAIL]. If successfully rejected, Rejected [EMAIL]. Otherwise, Failed to decide for [EMAIL].`
 
-`STATS:
-Print the number of applicants for all stages, including the hired and rejected.
+`STATS: 
+Print the number of applicants for all stages, including the hired and rejected.  
 Output: [STAGE_1] 0 [STAGE_2] 1 [STAGE_3] 1 Hired 2 Rejected 0`
 
 Example
 
 input_file.txt
 
-`DEFINE PhoneInterview BackgroundCheck DocumentSigning
-STATS
-CREATE test@gmail.com
-ADVANCE test@gmail.com
-DECIDE test@gmail.com 0
+`DEFINE PhoneInterview BackgroundCheck DocumentSigning  
+STATS  
+CREATE test@gmail.com  
+ADVANCE test@gmail.com  
+DECIDE test@gmail.com 0  
 STATS`
 
 output_file.txt
 
-`DEFINE PhoneInterview BackgroundCheck DocumentSigning
-Phone Interview 0 BackgroundCheck 0 DocumentSigning 0 Hired 0 Rejected 0
-CREATE test@gmail.com
-ADVANCE test@gmail.com
+`DEFINE PhoneInterview BackgroundCheck DocumentSigning  
+Phone Interview 0 BackgroundCheck 0 DocumentSigning 0 Hired 0 Rejected 0  
+CREATE test@gmail.com  
+ADVANCE test@gmail.com  
 Phone Interview 0 BackgroundCheck 0 DocumentSigning 0 Hired 0 Rejected 1`
 
 # Instructions
