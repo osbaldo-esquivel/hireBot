@@ -2,9 +2,11 @@
 
 This simple ruby script will simulate the hiring process by reading an input file with commands and applicants. An output file will be created with the results of the simulated hiring process. The commands are as follows:
 
-```DEFINE:
+```
+DEFINE:
 Define the stages in the hiring process. The available stages are ManualReview PhoneInterview BackgroundCheck DocumentSigning. The stages can be in any order, and an applicant must be in the last stage in order to be hired.
-Output: DEFINE [STAGE_NAMES]```
+Output: DEFINE [STAGE_NAMES]
+```
 
 ```CREATE:  
 Create an applicant with the specified email address. Check if the applicant is already in the system before creating a new one.
