@@ -4,27 +4,34 @@ This simple ruby script will simulate the hiring process by reading an input fil
 
 ```
 DEFINE:
-Define the stages in the hiring process. The available stages are ManualReview PhoneInterview BackgroundCheck
- DocumentSigning. The stages can be in any order, and an applicant must be in the last stage in order to be hired.
+Define the stages in the hiring process. The available stages are ManualReview 
+PhoneInterview BackgroundCheck DocumentSigning. The stages can be in any order, 
+and an applicant must be in the last stage in order to be hired.
 Output: DEFINE [STAGE_NAMES]
 ```
 
 ```
 CREATE:  
-Create an applicant with the specified email address. Check if the applicant is already in the system before creating a new one.
-Output: if the applicant with the same email exists, Duplicate applicant. Otherwise, CREATE [EMAIL].
+Create an applicant with the specified email address. Check if the applicant 
+is already in the system before creating a new one.
+Output: if the applicant with the same email exists, Duplicate applicant. 
+Otherwise, CREATE [EMAIL].
 ```
 
 ```
 ADVANCE:
-Advance the applicant to the specified stage. If STAGE_NAME parameter is omitted, advance the applicant to the next stage.
-Output: if the applicant is already in [STAGE_NAME] or the last stage, Already in [STAGE_NAME]. Otherwise, ADVANCE [STAGE_NAME].
+Advance the applicant to the specified stage. If STAGE_NAME parameter is 
+omitted, advance the applicant to the next stage.
+Output: if the applicant is already in [STAGE_NAME] or the last stage, Already 
+in [STAGE_NAME]. Otherwise, ADVANCE [STAGE_NAME].
 ```
 
 ```
 DECIDE:
-Decide if the applicant should be hired (1) or rejected (0). An applicant can be rejected (0) from any stage, but has to be in the last stage in order to be hired (1).
-Output: if successfully hired, Hired [EMAIL]. If successfully rejected, Rejected [EMAIL]. Otherwise, Failed to decide for [EMAIL].
+Decide if the applicant should be hired (1) or rejected (0). An applicant can 
+be rejected (0) from any stage, but has to be in the last stage in order to be hired (1).
+Output: if successfully hired, Hired [EMAIL]. If successfully rejected, Rejected 
+[EMAIL]. Otherwise, Failed to decide for [EMAIL].
 ```
 
 ```
