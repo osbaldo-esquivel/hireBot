@@ -40,7 +40,7 @@ Print the number of applicants for all stages, including the hired and rejected.
 Output: [STAGE_1] 0 [STAGE_2] 1 [STAGE_3] 1 Hired 2 Rejected 0
 ```
 
-###Example
+### Example
 
 input_file.txt
 
